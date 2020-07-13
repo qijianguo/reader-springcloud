@@ -1,4 +1,4 @@
-package com.qijianguo.reader.pojo;
+package com.qijianguo.springcloud.reader.pojo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

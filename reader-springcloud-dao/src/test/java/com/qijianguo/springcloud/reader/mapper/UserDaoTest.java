@@ -1,6 +1,6 @@
-package com.qijianguo.reader.mapper;
+package com.qijianguo.springcloud.reader.mapper;
 
-import com.qijianguo.reader.pojo.UserDO;
+import com.qijianguo.springcloud.reader.pojo.UserDO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

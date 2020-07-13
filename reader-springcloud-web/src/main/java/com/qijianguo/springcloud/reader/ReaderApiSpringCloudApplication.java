@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author qijianguo
  */
-@SpringBootApplication(scanBasePackages = {"com.qijianguo.reader"})
+@SpringBootApplication(scanBasePackages = {"com.qijianguo.springcloud.reader"})
 public class ReaderApiSpringCloudApplication {
 
     public static void main(String[] args) {

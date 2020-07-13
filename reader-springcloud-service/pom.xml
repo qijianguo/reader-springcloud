@@ -11,5 +11,11 @@
 
     <artifactId>reader-springcloud-service</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.qijianguo</groupId>
+            <artifactId>reader-springcloud-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

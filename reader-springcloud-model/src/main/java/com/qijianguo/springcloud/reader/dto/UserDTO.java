@@ -1,7 +1,6 @@
-package com.qijianguo.reader.dto;
+package com.qijianguo.springcloud.reader.dto;
 
-import com.fasterxml.jackson.databind.util.BeanUtil;
-import com.qijianguo.reader.pojo.UserDO;
+import com.qijianguo.springcloud.reader.pojo.UserDO;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 

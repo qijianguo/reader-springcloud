@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yincheng.njread.dao.mapper.UserDOMapper">
-  <resultMap id="BaseResultMap" type="com.qijianguo.reader.pojo.UserDO">
+<mapper namespace="com.qijianguo.springcloud.reader.mapper.UserDao">
+  <resultMap id="BaseResultMap" type="com.qijianguo.springcloud.reader.pojo.UserDO">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="uid" jdbcType="VARCHAR" property="uid" />
     <result column="name" jdbcType="VARCHAR" property="name" />

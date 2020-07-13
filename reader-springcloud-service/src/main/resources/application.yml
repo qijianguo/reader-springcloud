@@ -1,26 +1,4 @@
 spring:
   application:
-    name: reader-springcloud-dao
-  # 数据源配置
-  datasource:
-    # url: jdbc:mysql://sh-cdb-rtzsmifi.sql.tencentcdb.com:61976/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
-    url: jdbc:mysql://njreader.rwlb.rds.aliyuncs.com:3306/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
-    username: njread_test
-    password: yc_njread_2020@test
-    driverClassName: com.mysql.jdbc.Driver
-    hikari:
-      connection-init-sql: set names utf8mb4;
-      minimum-idle: 5
-      maximum-pool-size: 30
-      auto-commit: true
-      idle-timeout: 300000
-      connection-timeout: 30000
-      connection-test-query: SELECT 1
-
-mybatis:
-  # config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.qijianguo.reader.pojo
-  mapper-locations:
-  - classpath:mybatis/mapper/*.xml
-
+    name: reader-springcloud-service
 
