@@ -11,5 +11,12 @@
 
     <artifactId>reader-springcloud-config</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.qijianguo</groupId>
+            <artifactId>reader-springcloud-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -1,11 +1,9 @@
 package com.qijianguo.springcloud.reader.mapper;
 
 import com.qijianguo.springcloud.reader.pojo.UserDO;
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Mapper
 public interface UserDao {
 
     /**

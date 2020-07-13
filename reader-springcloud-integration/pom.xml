@@ -9,18 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>reader-springcloud-dao</artifactId>
+    <description>Project for integration of third - party functionality</description>
+
+    <artifactId>reader-springcloud-integration</artifactId>
 
     <dependencies>
-
         <dependency>
             <groupId>com.qijianguo</groupId>
-            <artifactId>reader-springcloud-config</artifactId>
+            <artifactId>reader-springcloud-service</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-
     </dependencies>
-
 
 </project>
