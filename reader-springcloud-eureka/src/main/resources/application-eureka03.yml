@@ -1,14 +1,14 @@
 server:
-  port: 11000
+  port: 11003
 spring:
   application:
-    name: reader-springcloud-eureka
+    name: reader-springcloud-eureka03
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka03.com
   client:
     register-with-eureka: false #false不向注册中心注册自己
     fetch-registry: false # false表示自己就是注册中心， 用来维护服务实例，并不需要去检索服务
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # 设置与Eureka Server交互的地址查询服务和注册服务
+      defaultZone: http://eureka01.com:11001/eureka/,http://eureka02.com:11002/eureka/

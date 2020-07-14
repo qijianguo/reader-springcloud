@@ -11,8 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 /**
  * @author qijianguo
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = UserService.class)
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = UserService.class)
 public class ReaderServiceTest {
 
     public static void main(String[] args) {

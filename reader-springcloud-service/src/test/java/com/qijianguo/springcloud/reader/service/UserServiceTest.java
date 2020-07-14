@@ -10,22 +10,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = UserServiceImpl.class)
-@MapperScan("com.qijianguo.springcloud.reader.mapper")
-@Slf4j
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = UserServiceImpl.class)
+//@MapperScan("com.qijianguo.springcloud.reader.mapper")
+//@Slf4j
 public class UserServiceTest {
 
-    @Autowired
-    private UserService userService;
-
-    @Test
-    public void get() {
-        UserDTO dto = userService.get(57L);
-        System.out.println(dto);
-    }
-
-    @Test
-    public void delete() {
-    }
+//    @Autowired
+//    private UserService userService;
+//
+//    @Test
+//    public void get() {
+//        UserDTO dto = userService.get(57L);
+//        System.out.println(dto);
+//    }
+//
+//    @Test
+//    public void delete() {
+//    }
 }

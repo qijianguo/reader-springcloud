@@ -26,3 +26,17 @@ mybatis:
   type-aliases-package: com.qijianguo.springcloud.reader.pojo
   mapper-locations:
   - classpath:mybatis/mapper/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
+  instance:
+    instance-id: reader-springcloud-web
+    prefer-ip-address: true
+
+info:
+  app.name: reader-springcloud
+  company.name: www.qijianguo.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
