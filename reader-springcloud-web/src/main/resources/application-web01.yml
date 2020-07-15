@@ -4,7 +4,7 @@ server:
     context-path: /reader
 spring:
   application:
-    name: reader-springcloud-web01
+    name: reader-springcloud-web
   # 数据源配置
   datasource:
     # url: jdbc:mysql://sh-cdb-rtzsmifi.sql.tencentcdb.com:61976/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false

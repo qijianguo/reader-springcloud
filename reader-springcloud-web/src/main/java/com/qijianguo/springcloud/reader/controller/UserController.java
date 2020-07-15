@@ -6,19 +6,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController("/user")
+@RestController
 @Slf4j
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping
+    @GetMapping("/user")
     public Object get(Long userId) {
+        return userService.get(userId);
+    }
+
+    @GetMapping("/user/feign/{userId}")
+    public Object getByFeign(@PathVariable("userId") Long userId) {
         return userService.get(userId);
     }
 

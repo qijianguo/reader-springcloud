@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: reader-springcloud-consumer
+    name: reader-springcloud-ribbon
   datasource:
     url: jdbc:mysql://njreader.rwlb.rds.aliyuncs.com:3306/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: njread_test
@@ -29,5 +29,5 @@ eureka:
     service-url:
       defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
   instance:
-    instance-id: reader-springcloud-consumer
+    instance-id: reader-springcloud-ribbon
     prefer-ip-address: true

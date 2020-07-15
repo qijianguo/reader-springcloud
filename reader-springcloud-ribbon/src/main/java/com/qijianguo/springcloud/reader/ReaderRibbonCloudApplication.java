@@ -12,9 +12,9 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 @SpringBootApplication
 @EnableEurekaClient
 @RibbonClient(name = "READER-SPRINGCLOUD-WEB", configuration = CustomerRibbonRule.class)
-public class ReaderConsumerCloudApplication {
+public class ReaderRibbonCloudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ReaderConsumerCloudApplication.class, args);
+        SpringApplication.run(ReaderRibbonCloudApplication.class, args);
     }
 }
