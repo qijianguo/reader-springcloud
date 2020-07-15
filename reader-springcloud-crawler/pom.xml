@@ -15,7 +15,6 @@
         <dependency>
             <groupId>com.qijianguo</groupId>
             <artifactId>reader-springcloud-service</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

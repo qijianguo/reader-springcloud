@@ -1,0 +1,1 @@
+java -jar ../../reader-springcloud-web/target/reader-springcloud.jar --spring.profiles.active=web01

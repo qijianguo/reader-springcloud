@@ -12,8 +12,6 @@
 
     <artifactId>reader-springcloud-model</artifactId>
 
-    <packaging>jar</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
