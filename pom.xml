@@ -32,6 +32,8 @@
         <spring.cloud.starter.eureka>1.4.7.RELEASE</spring.cloud.starter.eureka>
         <spring.cloud.starter.ribbon>1.4.7.RELEASE</spring.cloud.starter.ribbon>
         <spring.cloud.starter.feign>1.4.7.RELEASE</spring.cloud.starter.feign>
+        <spring.cloud.starter.hystrix>1.4.7.RELEASE</spring.cloud.starter.hystrix>
+        <spring.cloud.starter.hystrix.dashboard>1.4.7.RELEASE</spring.cloud.starter.hystrix.dashboard>
     </properties>
 
     <modules>
@@ -47,6 +49,8 @@
         <module>reader-springcloud-eureka</module>
         <module>reader-springcloud-ribbon</module>
         <module>reader-springcloud-feign</module>
+        <module>reader-springcloud-facade</module>
+        <module>reader-springcloud-hystrix-dashboard</module>
     </modules>
 
     <dependencyManagement>
@@ -109,6 +113,11 @@
             <dependency>
                 <groupId>com.qijianguo</groupId>
                 <artifactId>reader-springcloud-feign</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qijianguo</groupId>
+                <artifactId>reader-springcloud-facade</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -221,6 +230,18 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-ribbon</artifactId>
                 <version>${spring.cloud.starter.ribbon}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix</artifactId>
+                <version>${spring.cloud.starter.hystrix}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+                <version>${spring.cloud.starter.hystrix.dashboard}</version>
             </dependency>
 
             <dependency>

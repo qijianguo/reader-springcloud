@@ -1,0 +1,17 @@
+server:
+  port: 19999
+
+spring:
+  application:
+    name: reader-springcloud-feign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
+  instance:
+    instance-id: reader-springcloud-feign01
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true

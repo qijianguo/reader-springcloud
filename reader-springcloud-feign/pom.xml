@@ -14,12 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.qijianguo</groupId>
-            <artifactId>reader-springcloud-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>reader-springcloud-facade</artifactId>
         </dependency>
 
         <dependency>
@@ -27,14 +22,15 @@
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
 
+        <!-- hystrix -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
     </dependencies>
