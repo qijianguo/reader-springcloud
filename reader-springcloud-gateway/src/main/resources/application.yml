@@ -1,0 +1,27 @@
+server:
+  port: 16666
+
+spring:
+  application:
+    name: reader-springcloud-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
+  instance:
+    instance-id: reader-springcloud-gateway
+    prefer-ip-address: true
+
+info:
+  app.name: reader-springcloud
+  company.name: www.qijianguo.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+zuul:
+  routes:
+    feign.serviceId: reader-springcloud-feign
+    feign.path: /feign/**
+  ignored-services: "*"
+  prefix: /reader

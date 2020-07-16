@@ -34,6 +34,7 @@
         <spring.cloud.starter.feign>1.4.7.RELEASE</spring.cloud.starter.feign>
         <spring.cloud.starter.hystrix>1.4.7.RELEASE</spring.cloud.starter.hystrix>
         <spring.cloud.starter.hystrix.dashboard>1.4.7.RELEASE</spring.cloud.starter.hystrix.dashboard>
+        <spring.cloud.starter.zuul>1.4.7.RELEASE</spring.cloud.starter.zuul>
     </properties>
 
     <modules>
@@ -51,6 +52,7 @@
         <module>reader-springcloud-feign</module>
         <module>reader-springcloud-facade</module>
         <module>reader-springcloud-hystrix-dashboard</module>
+        <module>reader-springcloud-gateway</module>
     </modules>
 
     <dependencyManagement>
@@ -118,6 +120,16 @@
             <dependency>
                 <groupId>com.qijianguo</groupId>
                 <artifactId>reader-springcloud-facade</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qijianguo</groupId>
+                <artifactId>reader-springcloud-hystrix-dashboard</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qijianguo</groupId>
+                <artifactId>reader-springcloud-gateway</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -242,6 +254,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
                 <version>${spring.cloud.starter.hystrix.dashboard}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zuul</artifactId>
+                <version>${spring.cloud.starter.zuul}</version>
             </dependency>
 
             <dependency>
