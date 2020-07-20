@@ -35,7 +35,7 @@
         <spring.cloud.starter.hystrix>1.4.7.RELEASE</spring.cloud.starter.hystrix>
         <spring.cloud.starter.hystrix.dashboard>1.4.7.RELEASE</spring.cloud.starter.hystrix.dashboard>
         <spring.cloud.starter.zuul>1.4.7.RELEASE</spring.cloud.starter.zuul>
-        <spring.cloud.config.server>2.1.4.RELEASE</spring.cloud.config.server>
+        <spring.cloud.config.server>2.2.0.RELEASE</spring.cloud.config.server>
     </properties>
 
     <modules>
