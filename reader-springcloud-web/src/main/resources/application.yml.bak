@@ -1,0 +1,73 @@
+spring:
+  profiles:
+    active: dev
+server:
+  port: 10001
+
+mybatis:
+  type-aliases-package: com.qijianguo.springcloud.reader.pojo
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+
+info:
+  app.name: reader-springcloud
+  company.name: www.qijianguo.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+---
+# 开发环境
+spring:
+  profiles: dev
+  application:
+    name: reader-springcloud-web-dev
+  datasource:
+    url: jdbc:mysql://njreader.rwlb.rds.aliyuncs.com:3306/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: njread_test
+    password: yc_njread_2020@test
+    driverClassName: com.mysql.jdbc.Driver
+    hikari:
+      connection-init-sql: set names utf8mb4;
+      minimum-idle: 5
+      maximum-pool-size: 30
+      auto-commit: true
+      idle-timeout: 300000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
+  instance:
+    instance-id: reader-springcloud-web01
+    prefer-ip-address: true
+
+---
+# 生产环境
+spring:
+  profiles: product
+  application:
+    name: reader-springcloud-web-product
+  datasource:
+    url: jdbc:mysql://njreader.rwlb.rds.aliyuncs.com:3306/njread_test?autoReconnect=true&useUnicode=true&serverTimezone=GMT%2B8&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: njread_test
+    password: yc_njread_2020@test
+    driverClassName: com.mysql.jdbc.Driver
+    hikari:
+      connection-init-sql: set names utf8mb4;
+      minimum-idle: 5
+      maximum-pool-size: 30
+      auto-commit: true
+      idle-timeout: 300000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:11001/eureka/,http://eureka02.com:11002/eureka/,http://eureka03.com:11003/eureka/
+  instance:
+    instance-id: reader-springcloud-web01
+    prefer-ip-address: true
+

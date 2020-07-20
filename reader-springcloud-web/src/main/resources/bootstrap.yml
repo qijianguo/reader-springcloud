@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: reader-springcloud-web
+      profile: product
+      label: master
+      uri: http://localhost:3344

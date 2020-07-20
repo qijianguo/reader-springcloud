@@ -35,6 +35,7 @@
         <spring.cloud.starter.hystrix>1.4.7.RELEASE</spring.cloud.starter.hystrix>
         <spring.cloud.starter.hystrix.dashboard>1.4.7.RELEASE</spring.cloud.starter.hystrix.dashboard>
         <spring.cloud.starter.zuul>1.4.7.RELEASE</spring.cloud.starter.zuul>
+        <spring.cloud.config.server>2.1.4.RELEASE</spring.cloud.config.server>
     </properties>
 
     <modules>
@@ -51,7 +52,7 @@
         <module>reader-springcloud-ribbon</module>
         <module>reader-springcloud-feign</module>
         <module>reader-springcloud-facade</module>
-        <module>reader-springcloud-hystrix-dashboard</module>
+        <module>reader-springcloud-dashboard</module>
         <module>reader-springcloud-gateway</module>
     </modules>
 
@@ -124,7 +125,7 @@
             </dependency>
             <dependency>
                 <groupId>com.qijianguo</groupId>
-                <artifactId>reader-springcloud-hystrix-dashboard</artifactId>
+                <artifactId>reader-springcloud-dashboard</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -260,6 +261,12 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zuul</artifactId>
                 <version>${spring.cloud.starter.zuul}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>${spring.cloud.config.server}</version>
             </dependency>
 
             <dependency>

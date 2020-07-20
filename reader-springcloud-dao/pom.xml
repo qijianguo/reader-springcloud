@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>com.qijianguo</groupId>
-            <artifactId>reader-springcloud-config</artifactId>
+            <artifactId>reader-springcloud-common</artifactId>
         </dependency>
 
 
